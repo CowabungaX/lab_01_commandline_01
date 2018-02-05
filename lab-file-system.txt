@@ -1,290 +1,692 @@
+Lab - Navigating the File System 
 
-Lab - Navigating the File System
-==========
-Follow the instructions line-by-line.  
+========== 
 
-* Type in the commands as is, but ignore the beginning prompt.  
-* Enter, tab, up and down are represented by <ENTER><TAB>,<UP> and <DOWN>.  
-* "No output" or "nothing happens" are valid answers to any of the questions.
-==========
-
-==========
-1. Open a new terminal window.
-----------
-
-==========
-2. Create a directory called mtec1002.
-----------
-
-==========
-3. Change your directory so that you're in mtec1002.
-----------
-
-==========
-4. Type:
-
-$ pwd
-
-Check that the output ends with mtec1002 (something like this: /Users/joe/mtec1002).
-
-If it doesn't start at #1 again, or ask for help before moving on!
-
-Copy and paste the output of pwd below.
-----------
-
-
-
-==========
-5. Type:
-
-$ mkdir animals
-$ ls
-
-Copy and paste the output below.
-----------
-
-
-
-==========
-6. Type:
-
-$ mkdir food
-$ ls
-
-Copy and paste the output below.
-----------
-
-
-
-==========
-7. Type:
-
-$ mkdir -p foo/bar/baz/qux
-$ ls
-
-Copy and paste the output below.
-----------
-
-
-
-==========
-8. Type:
-
-$ cd foo/bar/baz/qux
-$ pwd
-
-Copy and paste the output below.
-----------
-
-
-
-==========
-9. Type:
-
-$ cd ../..
-$ pwd
-
-Copy and paste the output below.
-----------
-
-
-
-==========
-10. Type:
-
-$ cd -
-$ pwd
-
-Copy and paste the output below.
-----------
-
+Follow the instructions line-by-line.   
 
  
-==========
-11. Type:
+ 
 
-$ cd ../../../..
-$ pwd
+* Type in the commands as is, but ignore the beginning prompt.   
 
-Copy and paste the output below.
-----------
+* Enter, tab, up and down are represented by <ENTER><TAB>,<UP> and <DOWN>.   
 
+* "No output" or "nothing happens" are valid answers to any of the questions. 
 
+========== 
 
-==========
-12. Type:
+ 
+ 
 
-$ ls -l
-$ rmdir animals
-$ ls -l
+========== 
 
-Copy and paste the first two lines from the output into the space below.
-----------
+1. Open a new terminal window. 
 
+---------- 
 
+ 
+ 
 
-==========
-13. Type:
+========== 
 
-$ cd ~
-$ pwd
+2. Create a directory called mtec1003. 
 
-Copy and paste the output into the space below.
-----------
+---------- 
 
+ 
+ 
 
+========== 
 
-==========
-14. Type:
+3. Change your directory so that you're in mtec1003. 
 
-$ cd /Volumes
-$ pwd
+---------- 
 
-Copy and paste the output into the space below.
-----------
+ 
+ 
 
+========== 
 
+4. Type: 
 
-==========
-15. Type:
+ 
+ 
 
-$ cd /unknown_folder
-$ pwd
+$ pwd 
 
-Copy and paste the output into the space below.
-----------
+ 
+ 
 
+Check that the output ends with mtec1003 (something like this: /Users/bree/mtec1003). 
 
+ 
+ 
 
-==========
-15. Type:
+If it doesn't, start at #1 again, or ask for help before moving on! 
 
-$ cd ~/mtec1002
-$ pwd
+ 
+ 
 
-Copy and paste the output into the space below.
-----------
+Copy and paste the output of pwd below. 
 
+---------- 
 
+ 
+ 
 
-==========
-16. Type:
+/Users/student/mtec1003 
 
-$ hostname
+ 
+ 
 
-Copy and paste the output into the space below.
-----------
+========== 
 
+5. Type: 
 
+ 
+ 
 
-==========
-17a. Make sure you're back in your mtec1002, which should be in your home folder.  What command would you use to find out if you're in the right folder?  Write the command below, then run it.
-----------
+$ mkdir animals 
 
+$ ls 
 
+ 
+ 
 
-==========
-17b. If you're not in the right directory, type the following command:
+Copy and paste the output below. 
 
-cd ~/mtec1002
+---------- 
 
-Otherwise skip this question/step!
-----------
+ 
+ 
 
+animals 
 
+ 
+ 
 
-==========
-18. Create the following directories, with each one inside each other.  The first one, pinapple, is the inner most:
+========== 
 
-pineapple
-orange
-strawbery
-lemon
+6. Type: 
 
-Use only one command to make all of these new directories.  Write what command you used below:
-----------
+ 
+ 
 
+$ mkdir food 
 
+$ ls 
 
-==========
-19. Make another directory called aardvark.  
+ 
+ 
 
-Write the command you used to create the directory below:
-----------
+Copy and paste the output below. 
 
+---------- 
 
+ 
+ 
 
-==========
-20. List the files and directories in the current directory using the long format.  
+animals food 
 
-What is the modified date of the aardvark directory?
-----------
+ 
+ 
 
+========== 
 
+7. Type: 
 
-==========
-21. Make 3 directories nested within each other:
+ 
+ 
 
-* foo should be the outermost directory
-* bar should be the inside foo
-* baz should be inside bar
+$ mkdir -p foo/bar/baz/qux 
 
-What command did you use?
-----------
+$ ls 
 
+ 
+ 
 
+Copy and paste the output below. 
 
-==========
-22. Change your directory so that you're in the inner most directory (baz)
+---------- 
 
-What command did you use?
-----------
+ 
+ 
 
+animals foo food 
 
+ 
+ 
 
-==========
-23. Change your directory so that you're two directories up (foo)
+========== 
 
-What command did you use?
-----------
+8. Type: 
 
+ 
+ 
 
-==========
-24. What command is used to delete empty directories?
-----------
+$ cd foo/bar/baz/qux 
 
+$ pwd 
 
+ 
+ 
 
-==========
-25. What command is used to print out your current working directory?
-----------
+Copy and paste the output below. 
 
+---------- 
 
+ 
+ 
 
-==========
-26. What flag do I pass to ls to print out all files?
-----------
+/Users/student/mtec1003/foo/bar/baz/qux 
 
+ 
+ 
 
+========== 
 
-==========
-27. What's the shortcut for home directory?
-----------
+9. Type: 
 
+ 
+ 
 
+$ cd ../.. 
 
-==========
-28. What's a pathname?
-----------
+$ pwd 
 
+ 
+ 
 
+Copy and paste the output below. 
 
-==========
-29. What's a directory?
-----------
+---------- 
 
+ 
+ 
 
+/Users/student/mtec1003/foo/bar 
 
-==========
-30. What's the *absolute* path (full path, starting at root) to your user's Downloads directory?
-----------
+ 
+ 
+
+========== 
+
+10. Type: 
+
+ 
+ 
+
+$ cd - 
+
+$ pwd 
+
+ 
+ 
+
+Copy and paste the output below. 
+
+---------- 
+
+ 
+ 
+
+/Users/student/mtec1003/foo/bar/baz/qux 
+
+  
+
+========== 
+
+11. Type: 
+
+ 
+ 
+
+$ cd ../../../.. 
+
+$ pwd 
+
+ 
+ 
+
+Copy and paste the output below. 
+
+---------- 
+
+ 
+ 
+
+/Users/student/mtec1003 
+
+ 
+ 
+
+========== 
+
+12. Type: 
+
+ 
+ 
+
+$ ls -l 
+
+$ rmdir animals 
+
+$ ls -l 
+
+ 
+ 
+
+Copy and paste the first two lines from the output into the space below. 
+
+---------- 
+
+ 
+ 
+
+total 0 
+
+drwxr-xr-x  2 student  staff   68 Jan 29 16:43 animals 
+
+ 
+ 
+
+========== 
+
+13. Type: 
+
+ 
+ 
+
+$ cd ~ 
+
+$ pwd 
+
+ 
+ 
+
+Copy and paste the output into the space below. 
+
+---------- 
+
+ 
+ 
+
+/Users/student 
+
+ 
+ 
+
+========== 
+
+14. Type: 
+
+ 
+ 
+
+$ cd /Volumes 
+
+$ pwd 
+
+ 
+ 
+
+Copy and paste the output into the space below. 
+
+---------- 
+
+ 
+ 
+
+/Volumes 
+
+ 
+ 
+
+========== 
+
+15. Type: 
+
+ 
+ 
+
+$ cd /unknown_folder 
+
+$ pwd 
+
+ 
+ 
+
+Copy and paste the output into the space below. 
+
+---------- 
+
+ 
+ 
+
+/Volumes 
+
+ 
+ 
+
+========== 
+
+16. Type: 
+
+ 
+ 
+
+$ cd ~/mtec1003 
+
+$ pwd 
+
+ 
+ 
+
+Copy and paste the output into the space below. 
+
+---------- 
+
+ 
+ 
+
+/Users/student/mtec1003 
+
+ 
+ 
+
+========== 
+
+17. Type: 
+
+ 
+ 
+
+$ hostname 
+
+ 
+ 
+
+Copy and paste the output into the space below. 
+
+---------- 
+
+ 
+ 
+
+ent-v314-008.local 
+
+ 
+ 
+
+========== 
+
+18a. Make sure you're back in your mtec1003, which should be in your home folder.  What command would you use to find out if you're in the right folder?  Write the command below, then run it. 
+
+---------- 
+
+ 
+ 
+
+pwd 
+
+ 
+ 
+
+========== 
+
+18b. If you're not in the right directory, type the following command: 
+
+ 
+ 
+
+cd ~/mtec1003 
+
+ 
+ 
+
+Otherwise skip this question/step! 
+
+---------- 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+========== 
+
+19. Create the following directories, with each one inside each other.  The first one, pineapple, is the inner most: 
+
+ 
+ 
+
+pineapple 
+
+orange 
+
+strawberry 
+
+lemon 
+
+ 
+ 
+
+Use only one command to make all of these new directories.  Write what command you used below: 
+
+---------- 
+
+ 
+ 
+
+mkdir -p lemon/strawberry/orange/pineapple 
+
+ 
+ 
+
+========== 
+
+20. Make another directory called aardvark.   
+
+ 
+ 
+
+Write the command you used to create the directory below: 
+
+---------- 
+
+ 
+ 
+
+mkdir aardvark 
+
+ 
+ 
+
+========== 
+
+21. List the files and directories in the current directory using the long format.   
+
+ 
+ 
+
+What is the modified date of the aardvark directory? 
+
+---------- 
+
+ 
+ 
+
+drwxr-xr-x   2 student  staff    68 Jan 29 16:54 aardvark 
+
+ 
+ 
+
+========== 
+
+22. Make 3 directories nested within each other: 
+
+ 
+ 
+
+* foo should be the outermost directory 
+
+* bar should be the inside foo 
+
+* baz should be inside bar 
+
+ 
+ 
+
+What command did you use? 
+
+---------- 
+
+ 
+ 
+
+ mkdir -p foo/bar/baz 
+
+ 
+ 
+
+========== 
+
+23. Change your directory so that you're in the inner most directory (baz) 
+
+ 
+ 
+
+What command did you use? 
+
+---------- 
+
+ 
+ 
+
+cd foo/bar/baz 
+
+ 
+ 
+
+========== 
+
+24. Change your directory so that you're two directories up (foo) 
+
+ 
+ 
+
+What command did you use? 
+
+---------- 
+
+cd ../.. 
+
+ 
+ 
+
+========== 
+
+25. What command is used to delete empty directories? 
+
+---------- 
+
+ 
+ 
+
+rmdir 
+
+ 
+ 
+
+========== 
+
+26. What command is used to print out your current working directory? 
+
+---------- 
+
+ 
+ 
+
+pwd 
+
+ 
+ 
+
+========== 
+
+27. What flag do I pass to ls to print out all files? 
+
+---------- 
+
+ 
+ 
+
+-a 
+
+ 
+ 
+
+========== 
+
+28. What's the shortcut for home directory? 
+
+---------- 
+
+ 
+ 
+
+~ 
+
+ 
+ 
+
+========== 
+
+29. What's a pathname? 
+
+---------- 
+
+ 
+ 
+
+The names of the directorial path to a specific directory 
+
+ 
+ 
+
+========== 
+
+30. What's a directory? 
+
+---------- 
+
+ 
+ 
+
+A directory is synonymous to a folder 
+
+ 
+ 
+
+========== 
+
+31. What's the *absolute* path (full path, starting at root) to your user's Downloads directory? 
+
+---------- 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+/Users/student/downloads 
+
+ 
